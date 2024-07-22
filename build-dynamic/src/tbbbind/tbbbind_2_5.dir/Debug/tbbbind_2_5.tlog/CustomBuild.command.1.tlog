@@ -1,0 +1,10 @@
+^C:\WORK\LD\ONETBB-2021.2.5\SRC\TBBBIND\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/work/ld/oneTBB-2021.2.5 -BC:/work/ld/oneTBB-2021.2.5/build-dynamic --check-stamp-file C:/work/ld/oneTBB-2021.2.5/build-dynamic/src/tbbbind/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
