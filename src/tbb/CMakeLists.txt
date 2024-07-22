@@ -77,7 +77,6 @@ target_compile_options(tbb
     ${TBB_WARNING_SUPPRESS}
     ${TBB_LIB_COMPILE_FLAGS}
     ${TBB_COMMON_COMPILE_FLAGS}
-    /SOURCELINK:"C:\\work\\ld\\oneTBB-2021.2.5\\src\\tbb"
 )
 
 # Avoid use of target_link_libraries here as it changes /DEF option to \DEF on Windows.
