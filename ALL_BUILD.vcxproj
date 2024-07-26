@@ -1,0 +1,724 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{97BD891D-A72A-39BF-B8AA-5E333C679BFF}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/work/ld/sourceLink/oneTBB-2021.2.5/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/work/ld/sourceLink/oneTBB-2021.2.5 -BC:/work/ld/sourceLink/oneTBB-2021.2.5 --check-stamp-file C:/work/ld/sourceLink/oneTBB-2021.2.5/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.29\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-3.29\Templates\CPackConfig.cmake.in;C:\work\ld\sourceLink\oneTBB-2021.2.5\CMakeFiles\3.29.4\CMakeCXXCompiler.cmake;C:\work\ld\sourceLink\oneTBB-2021.2.5\CMakeFiles\3.29.4\CMakeRCCompiler.cmake;C:\work\ld\sourceLink\oneTBB-2021.2.5\CMakeFiles\3.29.4\CMakeSystem.cmake;C:\work\ld\sourceLink\oneTBB-2021.2.5\cmake\compilers\MSVC.cmake;C:\work\ld\sourceLink\oneTBB-2021.2.5\cmake\config_generation.cmake;C:\work\ld\sourceLink\oneTBB-2021.2.5\cmake\hwloc_detection.cmake;C:\work\ld\sourceLink\oneTBB-2021.2.5\cmake\memcheck.cmake;C:\work\ld\sourceLink\oneTBB-2021.2.5\cmake\packaging.cmake;C:\work\ld\sourceLink\oneTBB-2021.2.5\cmake\sanitize.cmake;C:\work\ld\sourceLink\oneTBB-2021.2.5\cmake\test_spec.cmake;C:\work\ld\sourceLink\oneTBB-2021.2.5\cmake\utils.cmake;C:\work\ld\sourceLink\oneTBB-2021.2.5\cmake\vars_utils.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\work\ld\sourceLink\oneTBB-2021.2.5\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/work/ld/sourceLink/oneTBB-2021.2.5/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/work/ld/sourceLink/oneTBB-2021.2.5 -BC:/work/ld/sourceLink/oneTBB-2021.2.5 --check-stamp-file C:/work/ld/sourceLink/oneTBB-2021.2.5/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.29\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-3.29\Templates\CPackConfig.cmake.in;C:\work\ld\sourceLink\oneTBB-2021.2.5\CMakeFiles\3.29.4\CMakeCXXCompiler.cmake;C:\work\ld\sourceLink\oneTBB-2021.2.5\CMakeFiles\3.29.4\CMakeRCCompiler.cmake;C:\work\ld\sourceLink\oneTBB-2021.2.5\CMakeFiles\3.29.4\CMakeSystem.cmake;C:\work\ld\sourceLink\oneTBB-2021.2.5\cmake\compilers\MSVC.cmake;C:\work\ld\sourceLink\oneTBB-2021.2.5\cmake\config_generation.cmake;C:\work\ld\sourceLink\oneTBB-2021.2.5\cmake\hwloc_detection.cmake;C:\work\ld\sourceLink\oneTBB-2021.2.5\cmake\memcheck.cmake;C:\work\ld\sourceLink\oneTBB-2021.2.5\cmake\packaging.cmake;C:\work\ld\sourceLink\oneTBB-2021.2.5\cmake\sanitize.cmake;C:\work\ld\sourceLink\oneTBB-2021.2.5\cmake\test_spec.cmake;C:\work\ld\sourceLink\oneTBB-2021.2.5\cmake\utils.cmake;C:\work\ld\sourceLink\oneTBB-2021.2.5\cmake\vars_utils.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\work\ld\sourceLink\oneTBB-2021.2.5\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/work/ld/sourceLink/oneTBB-2021.2.5/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/work/ld/sourceLink/oneTBB-2021.2.5 -BC:/work/ld/sourceLink/oneTBB-2021.2.5 --check-stamp-file C:/work/ld/sourceLink/oneTBB-2021.2.5/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.29\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-3.29\Templates\CPackConfig.cmake.in;C:\work\ld\sourceLink\oneTBB-2021.2.5\CMakeFiles\3.29.4\CMakeCXXCompiler.cmake;C:\work\ld\sourceLink\oneTBB-2021.2.5\CMakeFiles\3.29.4\CMakeRCCompiler.cmake;C:\work\ld\sourceLink\oneTBB-2021.2.5\CMakeFiles\3.29.4\CMakeSystem.cmake;C:\work\ld\sourceLink\oneTBB-2021.2.5\cmake\compilers\MSVC.cmake;C:\work\ld\sourceLink\oneTBB-2021.2.5\cmake\config_generation.cmake;C:\work\ld\sourceLink\oneTBB-2021.2.5\cmake\hwloc_detection.cmake;C:\work\ld\sourceLink\oneTBB-2021.2.5\cmake\memcheck.cmake;C:\work\ld\sourceLink\oneTBB-2021.2.5\cmake\packaging.cmake;C:\work\ld\sourceLink\oneTBB-2021.2.5\cmake\sanitize.cmake;C:\work\ld\sourceLink\oneTBB-2021.2.5\cmake\test_spec.cmake;C:\work\ld\sourceLink\oneTBB-2021.2.5\cmake\utils.cmake;C:\work\ld\sourceLink\oneTBB-2021.2.5\cmake\vars_utils.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\work\ld\sourceLink\oneTBB-2021.2.5\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/work/ld/sourceLink/oneTBB-2021.2.5/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/work/ld/sourceLink/oneTBB-2021.2.5 -BC:/work/ld/sourceLink/oneTBB-2021.2.5 --check-stamp-file C:/work/ld/sourceLink/oneTBB-2021.2.5/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.29\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-3.29\Templates\CPackConfig.cmake.in;C:\work\ld\sourceLink\oneTBB-2021.2.5\CMakeFiles\3.29.4\CMakeCXXCompiler.cmake;C:\work\ld\sourceLink\oneTBB-2021.2.5\CMakeFiles\3.29.4\CMakeRCCompiler.cmake;C:\work\ld\sourceLink\oneTBB-2021.2.5\CMakeFiles\3.29.4\CMakeSystem.cmake;C:\work\ld\sourceLink\oneTBB-2021.2.5\cmake\compilers\MSVC.cmake;C:\work\ld\sourceLink\oneTBB-2021.2.5\cmake\config_generation.cmake;C:\work\ld\sourceLink\oneTBB-2021.2.5\cmake\hwloc_detection.cmake;C:\work\ld\sourceLink\oneTBB-2021.2.5\cmake\memcheck.cmake;C:\work\ld\sourceLink\oneTBB-2021.2.5\cmake\packaging.cmake;C:\work\ld\sourceLink\oneTBB-2021.2.5\cmake\sanitize.cmake;C:\work\ld\sourceLink\oneTBB-2021.2.5\cmake\test_spec.cmake;C:\work\ld\sourceLink\oneTBB-2021.2.5\cmake\utils.cmake;C:\work\ld\sourceLink\oneTBB-2021.2.5\cmake\vars_utils.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\work\ld\sourceLink\oneTBB-2021.2.5\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\ZERO_CHECK.vcxproj">
+      <Project>{5BB7486B-E640-3263-87C8-D4EA1A9480A5}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\_test_malloc_atexit.vcxproj">
+      <Project>{9DB20421-9135-382C-B737-B9FCBF690840}</Project>
+      <Name>_test_malloc_atexit</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\_test_malloc_lib_unload.vcxproj">
+      <Project>{1502C5DB-E721-3107-81DE-035CC70FD7B9}</Project>
+      <Name>_test_malloc_lib_unload</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\_test_malloc_used_by_lib.vcxproj">
+      <Project>{76F41D20-646B-3CC0-ADD9-8D12D9812B82}</Project>
+      <Name>_test_malloc_used_by_lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_allocators.vcxproj">
+      <Project>{22A9101A-DEE3-384E-BB46-E54F02699B2B}</Project>
+      <Name>conformance_allocators</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_arena_constraints.vcxproj">
+      <Project>{8AD83058-CF34-3D43-A0AC-BD2904B76382}</Project>
+      <Name>conformance_arena_constraints</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_async_node.vcxproj">
+      <Project>{3EDB40D6-4DDC-3559-8BFC-8A41335AC4A6}</Project>
+      <Name>conformance_async_node</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_blocked_range.vcxproj">
+      <Project>{187014E1-7297-3147-A9F2-A129F53C7698}</Project>
+      <Name>conformance_blocked_range</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_blocked_range2d.vcxproj">
+      <Project>{2EEFFC7B-E954-345C-A00A-FB1535040CF5}</Project>
+      <Name>conformance_blocked_range2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_blocked_range3d.vcxproj">
+      <Project>{93BB5970-0D8C-3464-B267-CFDFCA73117D}</Project>
+      <Name>conformance_blocked_range3d</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_blocked_rangeNd.vcxproj">
+      <Project>{0319E4ED-C821-3528-9321-5C2642F943F1}</Project>
+      <Name>conformance_blocked_rangeNd</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_broadcast_node.vcxproj">
+      <Project>{32C1787D-4CDD-37B2-BB56-6CA1ABB31924}</Project>
+      <Name>conformance_broadcast_node</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_buffer_node.vcxproj">
+      <Project>{F230F6DA-8E2E-3323-A99B-406698EA32C1}</Project>
+      <Name>conformance_buffer_node</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_combinable.vcxproj">
+      <Project>{CCF8D9D8-F6A2-3E12-ABAE-8B12647A9038}</Project>
+      <Name>conformance_combinable</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_composite_node.vcxproj">
+      <Project>{828060F2-B5D4-39CB-A4B1-AF0D82811E52}</Project>
+      <Name>conformance_composite_node</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_concurrent_hash_map.vcxproj">
+      <Project>{BB65C924-99A5-3BE5-95E7-C5C92E6A21D5}</Project>
+      <Name>conformance_concurrent_hash_map</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_concurrent_lru_cache.vcxproj">
+      <Project>{AAC02EBB-8852-3953-8E23-F370783587D4}</Project>
+      <Name>conformance_concurrent_lru_cache</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_concurrent_map.vcxproj">
+      <Project>{9731BB95-DC53-3F08-8F38-E7F18AA55CFD}</Project>
+      <Name>conformance_concurrent_map</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_concurrent_priority_queue.vcxproj">
+      <Project>{2D95CE0E-1363-3FA5-92C0-CBDB98BA89E8}</Project>
+      <Name>conformance_concurrent_priority_queue</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_concurrent_queue.vcxproj">
+      <Project>{49BF6BA7-FB67-3E88-9A3B-F579D3C88ECF}</Project>
+      <Name>conformance_concurrent_queue</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_concurrent_set.vcxproj">
+      <Project>{F69B46BE-B46C-3BF7-98CB-2D285AEE52B0}</Project>
+      <Name>conformance_concurrent_set</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_concurrent_unordered_map.vcxproj">
+      <Project>{48CAF391-C050-3896-AAA5-0BB7EE673FAB}</Project>
+      <Name>conformance_concurrent_unordered_map</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_concurrent_unordered_set.vcxproj">
+      <Project>{15E3258A-BD46-3DF7-98F2-83D4DE779E74}</Project>
+      <Name>conformance_concurrent_unordered_set</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_concurrent_vector.vcxproj">
+      <Project>{6F3EF78A-2C90-3366-97B1-193172BD3CE3}</Project>
+      <Name>conformance_concurrent_vector</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_continue_node.vcxproj">
+      <Project>{A1DCB10B-17EF-3BF4-B56E-AD8A1B815DAE}</Project>
+      <Name>conformance_continue_node</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_enumerable_thread_specific.vcxproj">
+      <Project>{4D2EA73B-7782-3B2C-AA17-DA61CC6BB55F}</Project>
+      <Name>conformance_enumerable_thread_specific</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_function_node.vcxproj">
+      <Project>{358881C6-9607-3AEA-9DA2-791145EBFD32}</Project>
+      <Name>conformance_function_node</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_global_control.vcxproj">
+      <Project>{3CBEBF5D-CD35-316A-9ABA-5FF39D7BCB27}</Project>
+      <Name>conformance_global_control</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_graph.vcxproj">
+      <Project>{C4676BBA-9071-3009-A809-09A49546871D}</Project>
+      <Name>conformance_graph</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_indexer_node.vcxproj">
+      <Project>{80B70BCA-86EC-3E66-918A-C85F9CB7F302}</Project>
+      <Name>conformance_indexer_node</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_input_node.vcxproj">
+      <Project>{65956E17-3F77-3369-91C4-AE8D960DF82F}</Project>
+      <Name>conformance_input_node</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_join_node.vcxproj">
+      <Project>{72E563AB-64F7-3EB9-850A-6E3343739433}</Project>
+      <Name>conformance_join_node</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_limiter_node.vcxproj">
+      <Project>{7F40651E-38A5-39BD-BA28-E117D8C37464}</Project>
+      <Name>conformance_limiter_node</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_multifunction_node.vcxproj">
+      <Project>{E5918F8A-0986-3F6A-BF4E-D7BB4F533A87}</Project>
+      <Name>conformance_multifunction_node</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_mutex.vcxproj">
+      <Project>{E052CE31-645E-341C-B0AC-4A12FBD793A4}</Project>
+      <Name>conformance_mutex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_overwrite_node.vcxproj">
+      <Project>{F4EBCD1F-0152-311B-9236-7063E2D88E8F}</Project>
+      <Name>conformance_overwrite_node</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_parallel_for.vcxproj">
+      <Project>{BF496BEF-4656-32EC-9453-0A9FBA4F2B6A}</Project>
+      <Name>conformance_parallel_for</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_parallel_for_each.vcxproj">
+      <Project>{C6197757-2F95-3595-9355-1FFE8CD80884}</Project>
+      <Name>conformance_parallel_for_each</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_parallel_invoke.vcxproj">
+      <Project>{0286798D-7B3F-35B6-9595-1341100300B2}</Project>
+      <Name>conformance_parallel_invoke</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_parallel_pipeline.vcxproj">
+      <Project>{767896DF-A666-3B01-8569-2BE4B31CD44E}</Project>
+      <Name>conformance_parallel_pipeline</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_parallel_reduce.vcxproj">
+      <Project>{9011722D-B92E-3FAB-B10F-8E64475C386B}</Project>
+      <Name>conformance_parallel_reduce</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_parallel_scan.vcxproj">
+      <Project>{BD9851D5-A2C1-3671-A308-8DC8479AB4FD}</Project>
+      <Name>conformance_parallel_scan</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_parallel_sort.vcxproj">
+      <Project>{7F675759-362E-35DE-A81D-6FA8E6DAB000}</Project>
+      <Name>conformance_parallel_sort</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_priority_queue_node.vcxproj">
+      <Project>{79CE9FE9-FF24-36E4-BAE0-C06DC615EF22}</Project>
+      <Name>conformance_priority_queue_node</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_queue_node.vcxproj">
+      <Project>{818FCC34-961A-325E-8AD0-B505BB67D995}</Project>
+      <Name>conformance_queue_node</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_resumable_tasks.vcxproj">
+      <Project>{9AE22958-6E71-36E8-B1E7-15847AD7DB6E}</Project>
+      <Name>conformance_resumable_tasks</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_sequencer_node.vcxproj">
+      <Project>{4975F1EA-7AF0-3730-8DB4-8B525505A63E}</Project>
+      <Name>conformance_sequencer_node</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_split_node.vcxproj">
+      <Project>{E6EF8CB2-3B0A-32C6-A4E7-AE1166CF5BED}</Project>
+      <Name>conformance_split_node</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_task_arena.vcxproj">
+      <Project>{77C0BCED-51B3-37E5-B50C-6614D513845D}</Project>
+      <Name>conformance_task_arena</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_task_group_context.vcxproj">
+      <Project>{315BC114-F0F5-3027-87F4-AD8D9F08814A}</Project>
+      <Name>conformance_task_group_context</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_tick_count.vcxproj">
+      <Project>{32649D95-F65F-3618-9C68-F60596251531}</Project>
+      <Name>conformance_tick_count</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_version.vcxproj">
+      <Project>{5445F5B2-51CB-3C72-8D87-4CBF126C75CE}</Project>
+      <Name>conformance_version</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\conformance_write_once_node.vcxproj">
+      <Project>{27CAE3BE-95D5-305F-A968-4300AFDA7920}</Project>
+      <Name>conformance_write_once_node</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\src\tbb\tbb.vcxproj">
+      <Project>{B626E971-756A-3509-BADC-9F1912C9BDE4}</Project>
+      <Name>tbb</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\src\tbbmalloc\tbbmalloc.vcxproj">
+      <Project>{E96AF605-33BE-384D-BA11-68453C0FDCF8}</Project>
+      <Name>tbbmalloc</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\src\tbbmalloc_proxy\tbbmalloc_proxy.vcxproj">
+      <Project>{3F296267-B80F-38A4-97BE-87939DA396CF}</Project>
+      <Name>tbbmalloc_proxy</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_allocators.vcxproj">
+      <Project>{AD7F006A-DB7A-3D05-A8AF-E3EF1212D8DD}</Project>
+      <Name>test_allocators</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_arena_constraints.vcxproj">
+      <Project>{37B1D69E-CB8B-355A-ABDC-CC5287C629C7}</Project>
+      <Name>test_arena_constraints</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_arena_priorities.vcxproj">
+      <Project>{F4289E21-18F6-365B-87F4-14C617C40235}</Project>
+      <Name>test_arena_priorities</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_async_node.vcxproj">
+      <Project>{5217A2E0-7072-3F14-AC13-C4F6419B533A}</Project>
+      <Name>test_async_node</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_blocked_range.vcxproj">
+      <Project>{040E0FD8-04E9-35C3-A1FE-963992E51E38}</Project>
+      <Name>test_blocked_range</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_broadcast_node.vcxproj">
+      <Project>{8F01C5BA-F147-383C-B7EA-079C2B78BC9E}</Project>
+      <Name>test_broadcast_node</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_buffer_node.vcxproj">
+      <Project>{49EA37D8-DC7E-35D9-98EF-DBCA3B01379E}</Project>
+      <Name>test_buffer_node</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_composite_node.vcxproj">
+      <Project>{A4902347-AA34-3154-83AB-4981C604DFF0}</Project>
+      <Name>test_composite_node</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_concurrent_hash_map.vcxproj">
+      <Project>{6D352425-3ABB-314F-83B1-4E3962B1F0C7}</Project>
+      <Name>test_concurrent_hash_map</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_concurrent_lru_cache.vcxproj">
+      <Project>{2E429B5A-1AF6-3940-9361-2085CC007A90}</Project>
+      <Name>test_concurrent_lru_cache</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_concurrent_map.vcxproj">
+      <Project>{49076AFE-851E-3BB1-9A12-24F4C4EADA11}</Project>
+      <Name>test_concurrent_map</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_concurrent_monitor.vcxproj">
+      <Project>{EF9C8EC6-2A0A-3C74-9C99-B91DDAE34160}</Project>
+      <Name>test_concurrent_monitor</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_concurrent_priority_queue.vcxproj">
+      <Project>{6E893205-1EBB-39AA-A8D5-4B42AAEC0D46}</Project>
+      <Name>test_concurrent_priority_queue</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_concurrent_queue.vcxproj">
+      <Project>{F2561C5F-481F-3D43-B86B-BB9390DA3490}</Project>
+      <Name>test_concurrent_queue</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_concurrent_queue_whitebox.vcxproj">
+      <Project>{62851C04-051A-33AA-99D2-40E53C80E0BE}</Project>
+      <Name>test_concurrent_queue_whitebox</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_concurrent_set.vcxproj">
+      <Project>{AB0AD1C9-81A2-3090-BCFA-4A921D752E4F}</Project>
+      <Name>test_concurrent_set</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_concurrent_unordered_map.vcxproj">
+      <Project>{41855414-97A0-3C7F-9686-797F06A168C0}</Project>
+      <Name>test_concurrent_unordered_map</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_concurrent_unordered_set.vcxproj">
+      <Project>{E1E8C78D-781D-39BE-B373-76DC6C04B6D0}</Project>
+      <Name>test_concurrent_unordered_set</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_concurrent_vector.vcxproj">
+      <Project>{E0271744-D4FD-3377-8C6B-F0843BEE7799}</Project>
+      <Name>test_concurrent_vector</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_continue_node.vcxproj">
+      <Project>{2D53AFFB-35DD-3B1F-AA39-C9D0CB01AAD5}</Project>
+      <Name>test_continue_node</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_dynamic_link.vcxproj">
+      <Project>{B1767633-4748-3561-8D9F-FA3B9CBA3924}</Project>
+      <Name>test_dynamic_link</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_eh_algorithms.vcxproj">
+      <Project>{7DEB4BD2-0A94-34E6-B7EE-8D57B4F7B5B1}</Project>
+      <Name>test_eh_algorithms</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_eh_flow_graph.vcxproj">
+      <Project>{A02D88BC-8B68-3692-B7C6-3C5F289E75A2}</Project>
+      <Name>test_eh_flow_graph</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_eh_thread.vcxproj">
+      <Project>{67BA0AAC-6FD0-316F-9994-F15FC040BCF5}</Project>
+      <Name>test_eh_thread</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_enumerable_thread_specific.vcxproj">
+      <Project>{D7269761-EFEA-383A-8C36-AB5B3E72C258}</Project>
+      <Name>test_enumerable_thread_specific</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_environment_whitebox.vcxproj">
+      <Project>{4DEDC290-E87F-3726-8F38-73309FB60D6F}</Project>
+      <Name>test_environment_whitebox</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_flow_graph.vcxproj">
+      <Project>{16C46BFC-2621-3AC4-99F2-35989B9DD3DF}</Project>
+      <Name>test_flow_graph</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_flow_graph_priorities.vcxproj">
+      <Project>{B06250B6-D3D6-3E42-99A8-B73854E6058B}</Project>
+      <Name>test_flow_graph_priorities</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_flow_graph_whitebox.vcxproj">
+      <Project>{800C2E6D-D128-33CB-96AD-FE03A1505363}</Project>
+      <Name>test_flow_graph_whitebox</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_function_node.vcxproj">
+      <Project>{F9332968-EFE8-30B9-9E99-0230DF4C0D4B}</Project>
+      <Name>test_function_node</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_global_control.vcxproj">
+      <Project>{825E350A-C31B-3C8A-A2BA-8B9AAB71E92A}</Project>
+      <Name>test_global_control</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_handle_perror.vcxproj">
+      <Project>{A7EFF181-3ED2-3F14-9B9A-47B3927D3F33}</Project>
+      <Name>test_handle_perror</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_hw_concurrency.vcxproj">
+      <Project>{C14E61B5-0134-3BC1-843F-3B07C57778E6}</Project>
+      <Name>test_hw_concurrency</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_implicit_linkage_on_windows.vcxproj">
+      <Project>{B7423EE6-FCD0-3BA2-9669-71245979AEEF}</Project>
+      <Name>test_implicit_linkage_on_windows</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_indexer_node.vcxproj">
+      <Project>{1569CCE7-443D-387D-858F-383BE11BD266}</Project>
+      <Name>test_indexer_node</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_input_node.vcxproj">
+      <Project>{5AB8193F-4004-3AF8-A41D-A9769D45D76A}</Project>
+      <Name>test_input_node</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_intrusive_list.vcxproj">
+      <Project>{6CC7E254-5CA4-381C-9032-2B69848416E3}</Project>
+      <Name>test_intrusive_list</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_join_node.vcxproj">
+      <Project>{C9202186-D969-38C2-A26C-007EC1D9B263}</Project>
+      <Name>test_join_node</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_join_node_key_matching.vcxproj">
+      <Project>{6208436A-407E-3FE4-B98A-CBDC10B6A62E}</Project>
+      <Name>test_join_node_key_matching</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_join_node_msg_key_matching.vcxproj">
+      <Project>{8B5ED6E3-312C-3728-9206-31138602E427}</Project>
+      <Name>test_join_node_msg_key_matching</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_limiter_node.vcxproj">
+      <Project>{4C33D8ED-7EE8-3E51-B5A8-DF71820740B9}</Project>
+      <Name>test_limiter_node</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_malloc_atexit.vcxproj">
+      <Project>{4F06AFCF-4A2F-3857-A40E-504DDA448EC4}</Project>
+      <Name>test_malloc_atexit</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_malloc_compliance.vcxproj">
+      <Project>{F1EC7446-74C8-3730-BE83-45C3AC11CC96}</Project>
+      <Name>test_malloc_compliance</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_malloc_init_shutdown.vcxproj">
+      <Project>{0DCF3451-61AB-3F6A-8BF9-365F0B0D38C4}</Project>
+      <Name>test_malloc_init_shutdown</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_malloc_lib_unload.vcxproj">
+      <Project>{0CFE08DB-3BFA-3600-B32D-EF868FBD125D}</Project>
+      <Name>test_malloc_lib_unload</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_malloc_new_handler.vcxproj">
+      <Project>{C4AC9A9E-EE6F-3D51-818E-711D5CC51BAB}</Project>
+      <Name>test_malloc_new_handler</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_malloc_overload.vcxproj">
+      <Project>{6CE957AA-9FC2-3339-97B1-0B16A89BE977}</Project>
+      <Name>test_malloc_overload</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_malloc_overload_disable.vcxproj">
+      <Project>{8BCD7E2B-1D6A-3F04-8ADD-9AD2FBD13F28}</Project>
+      <Name>test_malloc_overload_disable</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_malloc_pools.vcxproj">
+      <Project>{08BB8F4A-4AB7-3F43-9BD2-81DAAA47963C}</Project>
+      <Name>test_malloc_pools</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_malloc_pure_c.vcxproj">
+      <Project>{B047B1B0-670A-3F8A-B2B7-4E1605FEE1C7}</Project>
+      <Name>test_malloc_pure_c</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_malloc_regression.vcxproj">
+      <Project>{1FC03499-8BF8-3CAE-AA56-23FC0F22D4A8}</Project>
+      <Name>test_malloc_regression</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_malloc_shutdown_hang.vcxproj">
+      <Project>{843EA0F2-3C8A-383F-B3C3-13A4DB969BD7}</Project>
+      <Name>test_malloc_shutdown_hang</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_malloc_used_by_lib.vcxproj">
+      <Project>{C8F66C2B-A25E-314A-A2FB-1936B8537841}</Project>
+      <Name>test_malloc_used_by_lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_malloc_whitebox.vcxproj">
+      <Project>{21C1BD23-2E86-34D2-A683-9BFC031F509F}</Project>
+      <Name>test_malloc_whitebox</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_multifunction_node.vcxproj">
+      <Project>{965DC7EF-0F1E-3F99-A073-3B61F2E901B5}</Project>
+      <Name>test_multifunction_node</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_mutex.vcxproj">
+      <Project>{4A7B81C5-8437-3B05-B809-97CB1F6DB06F}</Project>
+      <Name>test_mutex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_openmp.vcxproj">
+      <Project>{D34D2D40-6D09-3C4F-BCCA-F950025ECA09}</Project>
+      <Name>test_openmp</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_overwrite_node.vcxproj">
+      <Project>{C4C1BBA3-9181-3928-8393-CF77ABB4CDA2}</Project>
+      <Name>test_overwrite_node</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_parallel_for.vcxproj">
+      <Project>{BA37B597-9B13-34B7-9988-1A43AE5A0828}</Project>
+      <Name>test_parallel_for</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_parallel_for_each.vcxproj">
+      <Project>{FFCBF9E7-2B3C-3AD8-A1D2-006E7DAAE0CE}</Project>
+      <Name>test_parallel_for_each</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_parallel_invoke.vcxproj">
+      <Project>{E9E1FC8F-78F3-35D1-9052-916A3CF93B70}</Project>
+      <Name>test_parallel_invoke</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_parallel_pipeline.vcxproj">
+      <Project>{22C10B05-A9E4-3A9E-BAC3-5A7A3446C870}</Project>
+      <Name>test_parallel_pipeline</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_parallel_reduce.vcxproj">
+      <Project>{9E81D0F9-57D8-3034-8ABB-91EC333A46D7}</Project>
+      <Name>test_parallel_reduce</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_parallel_scan.vcxproj">
+      <Project>{45E18E7C-3CF0-310A-968E-44D790E53958}</Project>
+      <Name>test_parallel_scan</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_parallel_sort.vcxproj">
+      <Project>{81DB807D-767C-387D-9019-7BFB2329CEBF}</Project>
+      <Name>test_parallel_sort</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_priority_queue_node.vcxproj">
+      <Project>{646B0E92-4242-39A7-AB80-51B0040C1E1F}</Project>
+      <Name>test_priority_queue_node</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_profiling.vcxproj">
+      <Project>{7BB409CE-4FEF-34D1-AC27-3FF2D85EE05A}</Project>
+      <Name>test_profiling</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_queue_node.vcxproj">
+      <Project>{5E2AB7F3-A3ED-3017-9676-49D79B6782BB}</Project>
+      <Name>test_queue_node</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_resumable_tasks.vcxproj">
+      <Project>{8AC7A2DD-81F9-352B-B578-31D385A05844}</Project>
+      <Name>test_resumable_tasks</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_scalable_allocator.vcxproj">
+      <Project>{82439220-016F-3589-BBA8-B861DCAD8AC6}</Project>
+      <Name>test_scalable_allocator</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_semaphore.vcxproj">
+      <Project>{DBA0F2A2-10F1-3B5B-9703-870566434B49}</Project>
+      <Name>test_semaphore</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_sequencer_node.vcxproj">
+      <Project>{B54A6D0B-E968-3BA3-86F0-04C387329CE4}</Project>
+      <Name>test_sequencer_node</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_split_node.vcxproj">
+      <Project>{4C4DF86B-B073-3772-ACEC-811BF0C5DE5D}</Project>
+      <Name>test_split_node</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_tagged_msg.vcxproj">
+      <Project>{70F2EDF9-674B-3A52-A631-78F8C9DA1F69}</Project>
+      <Name>test_tagged_msg</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_task.vcxproj">
+      <Project>{541AC9CB-A479-38E3-909E-B5695A625D6D}</Project>
+      <Name>test_task</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_task_arena.vcxproj">
+      <Project>{8D7959F6-18DF-3B81-8291-E240F779F363}</Project>
+      <Name>test_task_arena</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_task_group.vcxproj">
+      <Project>{705CC035-D982-3FD6-BFFC-7412DF4882F4}</Project>
+      <Name>test_task_group</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_tbb_fork.vcxproj">
+      <Project>{8956114E-FF79-36FC-A9B9-54B33463F9C8}</Project>
+      <Name>test_tbb_fork</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_tbb_header.vcxproj">
+      <Project>{B1A0C141-E854-3CDD-80CF-6B1ED7C124B1}</Project>
+      <Name>test_tbb_header</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_tick_count.vcxproj">
+      <Project>{FA387071-A74B-3772-8AFA-F6417753ACD2}</Project>
+      <Name>test_tick_count</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\work\ld\sourceLink\oneTBB-2021.2.5\test\test_write_once_node.vcxproj">
+      <Project>{645CC87D-0473-32F7-AF3C-93F36C457C10}</Project>
+      <Name>test_write_once_node</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
