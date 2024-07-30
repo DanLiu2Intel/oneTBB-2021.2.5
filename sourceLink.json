@@ -1,9 +1,0 @@
-{
-    "documents": {
-        "C:\\work\\ld\\oneTBB-2021.2.5\\include\\*":                   "https://github.com/oneapi-src/oneTBB/tree/47061f128b14f758d1a9d5e90d0cfc5fa9793b89/include/*",
-        "C:\\work\\ld\\oneTBB-2021.2.5\\src\\tbb\\*":                   "https://github.com/oneapi-src/oneTBB/tree/47061f128b14f758d1a9d5e90d0cfc5fa9793b89/src/tbb/*",
-        "C:\\work\\ld\\oneTBB-2021.2.5\\src\\tbbbind\\**":              "https://github.com/oneapi-src/oneTBB/tree/47061f128b14f758d1a9d5e90d0cfc5fa9793b89/src/tbbbind/*",
-        "C:\\work\\ld\\oneTBB-2021.2.5\\src\\tbbmalloc\\*":             "https://github.com/oneapi-src/oneTBB/tree/47061f128b14f758d1a9d5e90d0cfc5fa9793b89/src/tbbmalloc/*",
-        "C:\\work\\ld\\oneTBB-2021.2.5\\src\\tbbmalloc_proxy\\*":       "https://github.com/oneapi-src/oneTBB/tree/47061f128b14f758d1a9d5e90d0cfc5fa9793b89/src/tbbmalloc_proxy/*"
-    }
-}
