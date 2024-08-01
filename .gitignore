@@ -6,7 +6,7 @@
 *.slo
 *.lo
 *.o
-*.obj
+#*.obj
 
 # Precompiled Headers
 *.gch
@@ -15,8 +15,8 @@
 # Compiled Dynamic libraries
 *.so
 *.so.*
-*.dylib
-*.dll
+#*.dylib
+#*.dll
 
 # Fortran module files
 *.mod
@@ -29,7 +29,7 @@
 *.lib
 
 # Executables
-*.exe
+#*.exe
 *.out
 *.app
 
@@ -53,7 +53,7 @@ __pycache__/
 # -------- IDE --------
 .vscode/*
 .vs/*
-out/*
+#out/*
 CMakeSettings.json
 
 # -------- CTags --------

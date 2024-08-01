@@ -1,0 +1,304 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "msvc_19.29_cxx_64_md_debug/tbbmalloc_debug.dll"
+		},
+		{
+			"path" : "msvc_19.29_cxx_64_md_debug/tbbmalloc_debug.lib"
+		},
+		{
+			"path" : "msvc_19.29_cxx_64_md_debug/tbbmalloc_debug.pdb"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"install",
+			"tbb_install_target",
+			"target_compile_options",
+			"target_compile_definitions",
+			"target_include_directories",
+			"target_sources"
+		],
+		"files" : 
+		[
+			"src/tbbmalloc/CMakeLists.txt",
+			"cmake/utils.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 15,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 97,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 26,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 54,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 29,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 39,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 42,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 24,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS  /GR /EHsc  /Zi /FS /Zf /ZH:SHA_256 /guard:cf /Qspectre /sdl /LTCG -MDd"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "/wd4324"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "/W3"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "/wd4245"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "/wd4458"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-D_CRT_SECURE_NO_WARNINGS"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "/GS"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "/volatile:iso"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "/FS"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 5,
+					"define" : "TBB_USE_DEBUG"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "__TBBMALLOC_BUILD"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "__TBB_USE_ITT_NOTIFY"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 7,
+					"path" : "C:/Users/danliu2/Mycode_ld/VSproject/tbb9/src/tbbmalloc/../../include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-DWIN32 -D_DEBUG"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-D_CRT_SECURE_NO_WARNINGS"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 5,
+					"define" : "TBB_USE_DEBUG"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "__TBBMALLOC_BUILD"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "__TBB_USE_ITT_NOTIFY"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 7,
+					"path" : "C:/Users/danliu2/Mycode_ld/VSproject/tbb9/src/tbbmalloc/../../include"
+				}
+			],
+			"language" : "RC",
+			"sourceIndexes" : 
+			[
+				6
+			]
+		}
+	],
+	"id" : "tbbmalloc::@413c5bb1eb264e71f130",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 3,
+				"path" : "lib"
+			},
+			{
+				"backtrace" : 3,
+				"path" : "bin"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "C:/Users/danliu2/Mycode_ld/VSproject/tbb9/out/install/x64-Debug"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/machine:x64  /DEBUG /OPT:REF /OPT:ICF /INCREMENTAL:NO /CETCOMPAT /guard:cf /sdl /LTCG /DEF:C:/Users/danliu2/Mycode_ld/VSproject/tbb9/src/tbbmalloc/def/win64-tbbmalloc.def",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "tbbmalloc",
+	"nameOnDisk" : "tbbmalloc_debug.dll",
+	"paths" : 
+	{
+		"build" : "src/tbbmalloc",
+		"source" : "src/tbbmalloc"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/tbbmalloc/backend.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/tbbmalloc/backref.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/tbbmalloc/frontend.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/tbbmalloc/large_objects.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/tbbmalloc/tbbmalloc.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/tbb/itt_notify.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 8,
+			"compileGroupIndex" : 1,
+			"path" : "src/tbbmalloc/tbbmalloc.rc",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}
