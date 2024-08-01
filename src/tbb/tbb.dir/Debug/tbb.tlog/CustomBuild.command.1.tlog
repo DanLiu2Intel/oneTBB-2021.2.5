@@ -1,0 +1,10 @@
+^C:\USERS\DANLIU2\MYCODE_LD\VSPROJECT\TBB8\SRC\TBB\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/danliu2/Mycode_ld/VSproject/tbb8 -BC:/Users/danliu2/Mycode_ld/VSproject/tbb8 --check-stamp-file C:/Users/danliu2/Mycode_ld/VSproject/tbb8/src/tbb/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
